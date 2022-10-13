@@ -3,7 +3,16 @@ import SimpleStockPrice from "@/components/SimpleStockPrice.vue";
 </script>
 
 <template>
-  <h1>
+  <div class="price-wrapper">
     <SimpleStockPrice ticker="AAPL" />
-  </h1>
+    <SimpleStockPrice ticker="TSLA" />
+    <SimpleStockPrice ticker="AMZN" />
+  </div>
 </template>
+
+<style lang="less" scoped>
+.price-wrapper {
+  display: flex;
+  gap: 32px;
+}
+</style>
